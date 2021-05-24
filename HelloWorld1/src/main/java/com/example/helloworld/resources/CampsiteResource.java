@@ -16,8 +16,9 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import io.dropwizard.jersey.params.LongParam;
 import javax.ws.rs.PathParam;
-
 import io.dropwizard.hibernate.UnitOfWork;
+
+
 @Path("/campsites")
 @Produces(MediaType.APPLICATION_JSON)
 public class CampsiteResource {

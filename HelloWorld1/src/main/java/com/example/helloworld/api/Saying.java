@@ -1,7 +1,9 @@
 package com.example.helloworld.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
+@Data
 public class Saying {
     private long id;
 
@@ -16,14 +18,5 @@ public class Saying {
         this.content = content;
     }
 
-    @JsonProperty
-    public long getId() {
-        return id;
-    }
 
-    @JsonProperty
-    public String getContent() {
-        System.out.println("saying name: " + content);
-        return content;
-    }
 }

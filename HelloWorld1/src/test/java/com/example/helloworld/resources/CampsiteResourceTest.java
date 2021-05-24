@@ -56,7 +56,7 @@ public class CampsiteResourceTest {
         this.site3 = new Campsite("s3","Boulder,CO");
         expectedList.add(this.site1);
         expectedList.add(this.site2);
-        site1.setId(1L);
+        site1.setSiteId(1L);
     }
 
     @AfterEach
@@ -79,7 +79,8 @@ public class CampsiteResourceTest {
 
         Campsite found = RULE.target("/campsites/1").request().get(Campsite.class);
 
-        assertThat(found.getId()).isEqualTo(site1.getId());
+        assertThat(found.getSiteId()).isEqualTo(site1.getSiteId());
+
         verify(DAO).findById(1L);
     }
 
@@ -89,7 +90,7 @@ public class CampsiteResourceTest {
         when(DAO.findAll()).thenReturn(expectedList);
 
         DAO.addSite(this.site3);
-        expectedList.add(this.site3);
+       expectedList.add(this.site3);
 
         List<Campsite> found = DAO.findAll();
         assertThat(expectedList).isEqualTo(found);

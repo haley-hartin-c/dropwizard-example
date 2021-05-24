@@ -49,7 +49,7 @@ public class IntegrationTest {
 //        RULE.getApplication().run("db", "migrate", CONFIG_PATH);
 //        System.out.println("set up");
 //    }
-
+//
     private static String createTempFile() {
         try {
             return File.createTempFile("test-example", null).getAbsolutePath();
@@ -70,9 +70,9 @@ public class IntegrationTest {
     void testPostCampsite() {
 
         final Campsite site = new Campsite("Boyd", "Longmont");
-        site.setId(3);
+        site.setSiteId(3);
         final Campsite newSite = postSite(site);
-        assertThat(newSite.getId()).isNotNull();
+        assertThat(newSite.getSiteId()).isNotNull();
         assertThat(newSite.getLocation()).isEqualTo(site.getLocation());
         assertThat(newSite.getName()).isEqualTo(site.getName());
     }
@@ -81,7 +81,7 @@ public class IntegrationTest {
    void testRenderingCampsite() throws Exception {
 
         final Campsite site = new Campsite("IntegrationTest", "Utah");
-        site.setId(4);
+        site.setSiteId(4);
         final Campsite newSite = postSite(site);
         final String url = "http://localhost:" + RULE.getLocalPort() + "/campsites";
         Response response = RULE.client().target(url).request().get();

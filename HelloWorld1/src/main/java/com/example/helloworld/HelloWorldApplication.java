@@ -61,6 +61,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
                     campsiteDAO
             );
 
+
             resource.addSite(site1);
             resource.addSite(site2);
             environment.jersey().register(resource);
@@ -68,7 +69,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
             //Printing out database contents to terminal
             Session session1 = HibernateUtil.getSessionFactory().openSession();
             List< Campsite > sites = session1.createQuery("from Campsite", Campsite.class).list();
-            sites.forEach(s -> System.out.println(s.getName()));
+//            sites.forEach(s -> System.out.println(s.getName()));
 
         }
 

@@ -2,8 +2,8 @@ package com.example.helloworld.hibernate;
 
 import javax.persistence.*;
 
-
 import org.hibernate.annotations.OptimisticLockType;
+import lombok.Data;
 
 @Entity
 @Table(name = "campsites")
@@ -12,7 +12,7 @@ import org.hibernate.annotations.OptimisticLockType;
                 query = "SELECT e FROM Campsite e")
 })
 
-
+@Data
 public class Campsite  {
 
 
@@ -34,27 +34,6 @@ public class Campsite  {
         this.name = name;
         this.location = location;
 
-    }
-
-    public long getId(){
-        return siteId;
-    }
-    public String getLocation(){
-        return location;
-    }
-    public String getName(){
-        return name;
-    }
-
-    public void setId(long id){
-        this.siteId=id;
-    }
-
-    public void setLocation(String location){
-        this.location = location;
-    }
-    public void setName(String name){
-        this.name = name;
     }
 
 
