@@ -1,0 +1,1064 @@
+INFO  [2021-05-24 16:01:00,033] org.eclipse.jetty.util.log: Logging initialized @1382ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:01:00,103] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:01:00,104] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:01:00,200] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:01:00,201] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:01:00,202] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:01:00,393] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:01:00,446] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:01:00,451] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:01:00,451] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:01:00,451] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:01:00,453] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:01:00,719] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:01:01,284] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5ad6f98e'
+INFO  [2021-05-24 16:01:01,292] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:01:01,498] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:01:01,568] org.eclipse.jetty.setuid.SetUIDListener: Opened application@751686aa{HTTP/1.1, (http/1.1)}{0.0.0.0:57853}
+INFO  [2021-05-24 16:01:01,568] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@638977e0{HTTP/1.1, (http/1.1)}{0.0.0.0:57854}
+INFO  [2021-05-24 16:01:01,570] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:01:01,890] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:01:01,891] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7c8b37a8{/,null,AVAILABLE}
+INFO  [2021-05-24 16:01:01,893] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:01:01,893] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1ecec098{/,null,AVAILABLE}
+INFO  [2021-05-24 16:01:01,903] org.eclipse.jetty.server.AbstractConnector: Started application@751686aa{HTTP/1.1, (http/1.1)}{0.0.0.0:57853}
+INFO  [2021-05-24 16:01:01,905] org.eclipse.jetty.server.AbstractConnector: Started admin@638977e0{HTTP/1.1, (http/1.1)}{0.0.0.0:57854}
+INFO  [2021-05-24 16:01:01,905] org.eclipse.jetty.server.Server: Started @3256ms
+INFO  [2021-05-24 16:01:01,960] org.eclipse.jetty.server.AbstractConnector: Stopped application@751686aa{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:01:01,961] org.eclipse.jetty.server.AbstractConnector: Stopped admin@638977e0{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:01:01,961] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1ecec098{/,null,STOPPED}
+INFO  [2021-05-24 16:01:01,965] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7c8b37a8{/,null,STOPPED}
+INFO  [2021-05-24 16:04:34,070] org.eclipse.jetty.util.log: Logging initialized @1231ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:04:34,135] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:04:34,136] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:04:34,221] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:04:34,222] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:04:34,223] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:04:34,411] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:04:34,455] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:04:34,458] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:04:34,458] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:04:34,458] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:04:34,460] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:04:34,721] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:04:35,227] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@15186ce0'
+INFO  [2021-05-24 16:04:35,235] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:04:35,433] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:04:35,499] org.eclipse.jetty.setuid.SetUIDListener: Opened application@6d7865d6{HTTP/1.1, (http/1.1)}{0.0.0.0:57888}
+INFO  [2021-05-24 16:04:35,500] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@45e639ee{HTTP/1.1, (http/1.1)}{0.0.0.0:57889}
+INFO  [2021-05-24 16:04:35,501] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:04:35,792] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:04:35,793] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@a859c5{/,null,AVAILABLE}
+INFO  [2021-05-24 16:04:35,794] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:04:35,795] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@49f1184e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:04:35,805] org.eclipse.jetty.server.AbstractConnector: Started application@6d7865d6{HTTP/1.1, (http/1.1)}{0.0.0.0:57888}
+INFO  [2021-05-24 16:04:35,806] org.eclipse.jetty.server.AbstractConnector: Started admin@45e639ee{HTTP/1.1, (http/1.1)}{0.0.0.0:57889}
+INFO  [2021-05-24 16:04:35,807] org.eclipse.jetty.server.Server: Started @2968ms
+INFO  [2021-05-24 16:04:35,861] org.eclipse.jetty.server.AbstractConnector: Stopped application@6d7865d6{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:04:35,862] org.eclipse.jetty.server.AbstractConnector: Stopped admin@45e639ee{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:04:35,862] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@49f1184e{/,null,STOPPED}
+INFO  [2021-05-24 16:04:35,866] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@a859c5{/,null,STOPPED}
+INFO  [2021-05-24 16:06:38,059] org.eclipse.jetty.util.log: Logging initialized @1170ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:06:38,106] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:06:38,107] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:06:38,166] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:06:38,167] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:06:38,167] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:06:38,320] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:06:38,354] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:06:38,357] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:06:38,357] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:06:38,357] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:06:38,358] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:06:38,610] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:06:39,066] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4dd1548e'
+INFO  [2021-05-24 16:06:39,074] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:06:39,243] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:06:39,293] org.eclipse.jetty.setuid.SetUIDListener: Opened application@436a563f{HTTP/1.1, (http/1.1)}{0.0.0.0:57906}
+INFO  [2021-05-24 16:06:39,293] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@538e74fc{HTTP/1.1, (http/1.1)}{0.0.0.0:57907}
+INFO  [2021-05-24 16:06:39,294] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:06:39,546] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:06:39,547] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@10301d6f{/,null,AVAILABLE}
+INFO  [2021-05-24 16:06:39,548] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:06:39,548] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@20c283b4{/,null,AVAILABLE}
+INFO  [2021-05-24 16:06:39,558] org.eclipse.jetty.server.AbstractConnector: Started application@436a563f{HTTP/1.1, (http/1.1)}{0.0.0.0:57906}
+INFO  [2021-05-24 16:06:39,559] org.eclipse.jetty.server.AbstractConnector: Started admin@538e74fc{HTTP/1.1, (http/1.1)}{0.0.0.0:57907}
+INFO  [2021-05-24 16:06:39,560] org.eclipse.jetty.server.Server: Started @2671ms
+INFO  [2021-05-24 16:06:39,604] org.eclipse.jetty.server.AbstractConnector: Stopped application@436a563f{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:06:39,605] org.eclipse.jetty.server.AbstractConnector: Stopped admin@538e74fc{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:06:39,606] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@20c283b4{/,null,STOPPED}
+INFO  [2021-05-24 16:06:39,608] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@10301d6f{/,null,STOPPED}
+INFO  [2021-05-24 16:07:15,618] org.eclipse.jetty.util.log: Logging initialized @1103ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:07:15,669] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:07:15,670] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:07:15,734] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:07:15,735] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:07:15,736] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:07:15,901] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:07:15,938] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:07:15,941] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:07:15,941] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:07:15,941] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:07:15,943] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:07:16,188] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:07:16,620] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@194b9783'
+INFO  [2021-05-24 16:07:16,629] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:07:16,805] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:07:16,856] org.eclipse.jetty.setuid.SetUIDListener: Opened application@492c9892{HTTP/1.1, (http/1.1)}{0.0.0.0:57918}
+INFO  [2021-05-24 16:07:16,857] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@533e2f4{HTTP/1.1, (http/1.1)}{0.0.0.0:57919}
+INFO  [2021-05-24 16:07:16,858] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:07:17,123] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:07:17,124] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@10724a72{/,null,AVAILABLE}
+INFO  [2021-05-24 16:07:17,126] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:07:17,126] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@628bcf2c{/,null,AVAILABLE}
+INFO  [2021-05-24 16:07:17,134] org.eclipse.jetty.server.AbstractConnector: Started application@492c9892{HTTP/1.1, (http/1.1)}{0.0.0.0:57918}
+INFO  [2021-05-24 16:07:17,136] org.eclipse.jetty.server.AbstractConnector: Started admin@533e2f4{HTTP/1.1, (http/1.1)}{0.0.0.0:57919}
+INFO  [2021-05-24 16:07:17,136] org.eclipse.jetty.server.Server: Started @2621ms
+INFO  [2021-05-24 16:07:17,187] org.eclipse.jetty.server.AbstractConnector: Stopped application@492c9892{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:07:17,188] org.eclipse.jetty.server.AbstractConnector: Stopped admin@533e2f4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:07:17,189] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@628bcf2c{/,null,STOPPED}
+INFO  [2021-05-24 16:07:17,192] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@10724a72{/,null,STOPPED}
+INFO  [2021-05-24 16:09:33,128] org.eclipse.jetty.util.log: Logging initialized @1195ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:09:33,186] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:09:33,186] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:09:33,258] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:09:33,259] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:09:33,259] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:09:33,442] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:09:33,484] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:09:33,486] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:09:33,486] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:09:33,486] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:09:33,488] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:09:33,767] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:09:34,253] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3316527e'
+INFO  [2021-05-24 16:09:34,262] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:09:34,455] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:09:34,515] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:57936}
+INFO  [2021-05-24 16:09:34,515] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:57937}
+INFO  [2021-05-24 16:09:34,517] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:09:34,814] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:09:34,815] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@75f2ff80{/,null,AVAILABLE}
+INFO  [2021-05-24 16:09:34,816] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:09:34,817] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@8ecc457{/,null,AVAILABLE}
+INFO  [2021-05-24 16:09:34,826] org.eclipse.jetty.server.AbstractConnector: Started application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:57936}
+INFO  [2021-05-24 16:09:34,827] org.eclipse.jetty.server.AbstractConnector: Started admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:57937}
+INFO  [2021-05-24 16:09:34,828] org.eclipse.jetty.server.Server: Started @2895ms
+INFO  [2021-05-24 16:09:34,883] org.eclipse.jetty.server.AbstractConnector: Stopped application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:09:34,884] org.eclipse.jetty.server.AbstractConnector: Stopped admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:09:34,885] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@8ecc457{/,null,STOPPED}
+INFO  [2021-05-24 16:09:34,888] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@75f2ff80{/,null,STOPPED}
+INFO  [2021-05-24 16:18:05,612] org.eclipse.jetty.util.log: Logging initialized @1266ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:18:05,676] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:18:05,677] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:18:05,770] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:18:05,771] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:18:05,772] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:18:05,961] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:18:06,015] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:18:06,019] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:18:06,020] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:18:06,020] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:18:06,021] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:18:06,290] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:18:06,839] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3316527e'
+INFO  [2021-05-24 16:18:06,848] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:18:07,059] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:18:07,122] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:58204}
+INFO  [2021-05-24 16:18:07,123] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:58205}
+INFO  [2021-05-24 16:18:07,124] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:18:07,442] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:18:07,443] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@75f2ff80{/,null,AVAILABLE}
+INFO  [2021-05-24 16:18:07,445] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:18:07,445] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@8ecc457{/,null,AVAILABLE}
+INFO  [2021-05-24 16:18:07,456] org.eclipse.jetty.server.AbstractConnector: Started application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:58204}
+INFO  [2021-05-24 16:18:07,459] org.eclipse.jetty.server.AbstractConnector: Started admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:58205}
+INFO  [2021-05-24 16:18:07,459] org.eclipse.jetty.server.Server: Started @3114ms
+INFO  [2021-05-24 16:18:07,524] org.eclipse.jetty.server.AbstractConnector: Stopped application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:18:07,525] org.eclipse.jetty.server.AbstractConnector: Stopped admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:18:07,525] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@8ecc457{/,null,STOPPED}
+INFO  [2021-05-24 16:18:07,529] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@75f2ff80{/,null,STOPPED}
+INFO  [2021-05-24 16:26:54,639] org.eclipse.jetty.util.log: Logging initialized @1399ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:26:54,714] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:26:54,715] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:26:54,821] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:26:54,822] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:26:54,823] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:26:55,032] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:26:55,090] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:26:55,094] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:26:55,094] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:26:55,094] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:26:55,096] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:26:55,400] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:26:55,935] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3316527e'
+INFO  [2021-05-24 16:26:55,944] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:26:56,151] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:26:56,220] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:58328}
+INFO  [2021-05-24 16:26:56,220] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:58329}
+INFO  [2021-05-24 16:26:56,222] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:26:56,559] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:26:56,561] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@75f2ff80{/,null,AVAILABLE}
+INFO  [2021-05-24 16:26:56,562] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:26:56,563] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@8ecc457{/,null,AVAILABLE}
+INFO  [2021-05-24 16:26:56,573] org.eclipse.jetty.server.AbstractConnector: Started application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:58328}
+INFO  [2021-05-24 16:26:56,574] org.eclipse.jetty.server.AbstractConnector: Started admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:58329}
+INFO  [2021-05-24 16:26:56,575] org.eclipse.jetty.server.Server: Started @3335ms
+INFO  [2021-05-24 16:26:56,641] org.eclipse.jetty.server.AbstractConnector: Stopped application@2dc3ece8{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:26:56,642] org.eclipse.jetty.server.AbstractConnector: Stopped admin@2c1a8529{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:26:56,642] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@8ecc457{/,null,STOPPED}
+INFO  [2021-05-24 16:26:56,646] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@75f2ff80{/,null,STOPPED}
+INFO  [2021-05-24 16:35:42,446] org.eclipse.jetty.util.log: Logging initialized @1354ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:35:42,517] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:35:42,518] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:35:42,623] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:35:42,624] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:35:42,625] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:35:42,836] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:35:42,894] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:35:42,899] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:35:42,899] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:35:42,899] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:35:42,901] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:35:43,190] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:35:43,719] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@295b07e0'
+INFO  [2021-05-24 16:35:43,728] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:35:43,948] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:35:44,017] org.eclipse.jetty.setuid.SetUIDListener: Opened application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:58434}
+INFO  [2021-05-24 16:35:44,017] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:58435}
+INFO  [2021-05-24 16:35:44,019] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:35:44,329] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:35:44,330] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@27d6267e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:35:44,331] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:35:44,331] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1b10f60e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:35:44,340] org.eclipse.jetty.server.AbstractConnector: Started application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:58434}
+INFO  [2021-05-24 16:35:44,342] org.eclipse.jetty.server.AbstractConnector: Started admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:58435}
+INFO  [2021-05-24 16:35:44,343] org.eclipse.jetty.server.Server: Started @3252ms
+INFO  [2021-05-24 16:35:44,401] org.eclipse.jetty.server.AbstractConnector: Stopped application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:35:44,402] org.eclipse.jetty.server.AbstractConnector: Stopped admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:35:44,402] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1b10f60e{/,null,STOPPED}
+INFO  [2021-05-24 16:35:44,406] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@27d6267e{/,null,STOPPED}
+INFO  [2021-05-24 16:38:09,631] org.eclipse.jetty.util.log: Logging initialized @1277ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:38:09,696] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:38:09,697] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:38:09,791] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:38:09,792] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:38:09,793] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:38:09,983] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:38:10,031] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:38:10,034] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:38:10,035] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:38:10,035] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:38:10,037] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:38:10,306] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:38:10,797] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@295b07e0'
+INFO  [2021-05-24 16:38:10,805] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:38:10,997] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:38:11,063] org.eclipse.jetty.setuid.SetUIDListener: Opened application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:58464}
+INFO  [2021-05-24 16:38:11,063] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:58465}
+INFO  [2021-05-24 16:38:11,065] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:38:11,357] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:38:11,358] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@27d6267e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:38:11,359] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:38:11,360] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1b10f60e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:38:11,370] org.eclipse.jetty.server.AbstractConnector: Started application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:58464}
+INFO  [2021-05-24 16:38:11,371] org.eclipse.jetty.server.AbstractConnector: Started admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:58465}
+INFO  [2021-05-24 16:38:11,371] org.eclipse.jetty.server.Server: Started @3018ms
+INFO  [2021-05-24 16:38:11,432] org.eclipse.jetty.server.AbstractConnector: Stopped application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:38:11,434] org.eclipse.jetty.server.AbstractConnector: Stopped admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:38:11,434] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1b10f60e{/,null,STOPPED}
+INFO  [2021-05-24 16:38:11,439] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@27d6267e{/,null,STOPPED}
+INFO  [2021-05-24 16:41:07,686] org.eclipse.jetty.util.log: Logging initialized @1423ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:41:07,759] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:41:07,760] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:41:07,865] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:41:07,866] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:41:07,867] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:41:08,082] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:41:08,138] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:41:08,142] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:41:08,142] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:41:08,142] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:41:08,144] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:41:08,434] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:41:09,008] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@295b07e0'
+INFO  [2021-05-24 16:41:09,016] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:41:09,230] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:41:09,299] org.eclipse.jetty.setuid.SetUIDListener: Opened application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:58512}
+INFO  [2021-05-24 16:41:09,299] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:58513}
+INFO  [2021-05-24 16:41:09,301] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:41:09,631] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:41:09,633] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@27d6267e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:41:09,634] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:41:09,634] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1b10f60e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:41:09,644] org.eclipse.jetty.server.AbstractConnector: Started application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:58512}
+INFO  [2021-05-24 16:41:09,645] org.eclipse.jetty.server.AbstractConnector: Started admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:58513}
+INFO  [2021-05-24 16:41:09,645] org.eclipse.jetty.server.Server: Started @3383ms
+INFO  [2021-05-24 16:41:09,709] org.eclipse.jetty.server.AbstractConnector: Stopped application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:41:09,709] org.eclipse.jetty.server.AbstractConnector: Stopped admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:41:09,710] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1b10f60e{/,null,STOPPED}
+INFO  [2021-05-24 16:41:09,713] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@27d6267e{/,null,STOPPED}
+INFO  [2021-05-24 16:42:10,200] org.eclipse.jetty.util.log: Logging initialized @1284ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:42:10,252] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:42:10,254] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:42:10,318] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:42:10,319] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:42:10,320] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:42:10,493] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:42:10,536] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:42:10,539] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:42:10,539] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:42:10,540] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:42:10,541] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:42:10,821] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:42:11,314] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@295b07e0'
+INFO  [2021-05-24 16:42:11,322] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:42:11,503] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:42:11,565] org.eclipse.jetty.setuid.SetUIDListener: Opened application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:58533}
+INFO  [2021-05-24 16:42:11,565] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:58534}
+INFO  [2021-05-24 16:42:11,567] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:42:11,834] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:42:11,835] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@27d6267e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:42:11,837] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:42:11,837] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1b10f60e{/,null,AVAILABLE}
+INFO  [2021-05-24 16:42:11,846] org.eclipse.jetty.server.AbstractConnector: Started application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:58533}
+INFO  [2021-05-24 16:42:11,848] org.eclipse.jetty.server.AbstractConnector: Started admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:58534}
+INFO  [2021-05-24 16:42:11,848] org.eclipse.jetty.server.Server: Started @2933ms
+INFO  [2021-05-24 16:42:11,898] org.eclipse.jetty.server.AbstractConnector: Stopped application@32328dc4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:42:11,898] org.eclipse.jetty.server.AbstractConnector: Stopped admin@17df689e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:42:11,899] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1b10f60e{/,null,STOPPED}
+INFO  [2021-05-24 16:42:11,903] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@27d6267e{/,null,STOPPED}
+INFO  [2021-05-24 16:44:23,673] org.eclipse.jetty.util.log: Logging initialized @1167ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:44:23,735] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:44:23,736] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:44:23,817] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:44:23,817] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:44:23,818] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:44:23,997] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:44:24,037] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:44:24,040] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:44:24,040] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:44:24,040] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:44:24,042] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:44:24,299] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:44:24,797] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@118cbded'
+INFO  [2021-05-24 16:44:24,805] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:44:24,986] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:44:25,038] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2a54c92e{HTTP/1.1, (http/1.1)}{0.0.0.0:58584}
+INFO  [2021-05-24 16:44:25,039] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@31533eb1{HTTP/1.1, (http/1.1)}{0.0.0.0:58585}
+INFO  [2021-05-24 16:44:25,040] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:44:25,326] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:44:25,328] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@366b4a7b{/,null,AVAILABLE}
+INFO  [2021-05-24 16:44:25,329] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:44:25,329] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@21ab919c{/,null,AVAILABLE}
+INFO  [2021-05-24 16:44:25,339] org.eclipse.jetty.server.AbstractConnector: Started application@2a54c92e{HTTP/1.1, (http/1.1)}{0.0.0.0:58584}
+INFO  [2021-05-24 16:44:25,340] org.eclipse.jetty.server.AbstractConnector: Started admin@31533eb1{HTTP/1.1, (http/1.1)}{0.0.0.0:58585}
+INFO  [2021-05-24 16:44:25,341] org.eclipse.jetty.server.Server: Started @2835ms
+INFO  [2021-05-24 16:44:25,402] org.eclipse.jetty.server.AbstractConnector: Stopped application@2a54c92e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:44:25,402] org.eclipse.jetty.server.AbstractConnector: Stopped admin@31533eb1{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:44:25,403] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@21ab919c{/,null,STOPPED}
+INFO  [2021-05-24 16:44:25,407] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@366b4a7b{/,null,STOPPED}
+INFO  [2021-05-24 16:47:59,557] org.eclipse.jetty.util.log: Logging initialized @1292ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:47:59,622] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:47:59,623] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:47:59,719] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:47:59,720] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:47:59,721] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:47:59,927] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:47:59,978] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:47:59,982] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:47:59,982] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:47:59,982] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:47:59,984] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:48:00,253] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:48:00,776] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@438aaa9f'
+INFO  [2021-05-24 16:48:00,784] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:48:00,984] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:48:01,042] org.eclipse.jetty.setuid.SetUIDListener: Opened application@5f20b6fe{HTTP/1.1, (http/1.1)}{0.0.0.0:58678}
+INFO  [2021-05-24 16:48:01,042] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@31880efa{HTTP/1.1, (http/1.1)}{0.0.0.0:58679}
+INFO  [2021-05-24 16:48:01,044] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:48:01,389] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:48:01,391] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@4d2bc56a{/,null,AVAILABLE}
+INFO  [2021-05-24 16:48:01,392] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:48:01,393] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@18f13756{/,null,AVAILABLE}
+INFO  [2021-05-24 16:48:01,403] org.eclipse.jetty.server.AbstractConnector: Started application@5f20b6fe{HTTP/1.1, (http/1.1)}{0.0.0.0:58678}
+INFO  [2021-05-24 16:48:01,404] org.eclipse.jetty.server.AbstractConnector: Started admin@31880efa{HTTP/1.1, (http/1.1)}{0.0.0.0:58679}
+INFO  [2021-05-24 16:48:01,404] org.eclipse.jetty.server.Server: Started @3140ms
+INFO  [2021-05-24 16:48:01,469] org.eclipse.jetty.server.AbstractConnector: Stopped application@5f20b6fe{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:48:01,469] org.eclipse.jetty.server.AbstractConnector: Stopped admin@31880efa{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:48:01,470] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@18f13756{/,null,STOPPED}
+INFO  [2021-05-24 16:48:01,474] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@4d2bc56a{/,null,STOPPED}
+INFO  [2021-05-24 16:56:40,694] org.eclipse.jetty.util.log: Logging initialized @1244ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 16:56:40,766] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 16:56:40,766] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 16:56:40,863] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 16:56:40,864] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 16:56:40,865] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 16:56:41,062] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 16:56:41,124] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 16:56:41,128] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 16:56:41,129] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 16:56:41,129] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 16:56:41,131] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 16:56:41,422] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 16:56:41,981] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@da34eb0'
+INFO  [2021-05-24 16:56:41,991] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 16:56:42,193] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 16:56:42,255] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:58812}
+INFO  [2021-05-24 16:56:42,255] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:58813}
+INFO  [2021-05-24 16:56:42,257] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 16:56:42,557] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 16:56:42,558] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3093b9ff{/,null,AVAILABLE}
+INFO  [2021-05-24 16:56:42,560] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 16:56:42,560] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@c29b0dc{/,null,AVAILABLE}
+INFO  [2021-05-24 16:56:42,570] org.eclipse.jetty.server.AbstractConnector: Started application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:58812}
+INFO  [2021-05-24 16:56:42,571] org.eclipse.jetty.server.AbstractConnector: Started admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:58813}
+INFO  [2021-05-24 16:56:42,571] org.eclipse.jetty.server.Server: Started @3122ms
+INFO  [2021-05-24 16:56:42,622] org.eclipse.jetty.server.AbstractConnector: Stopped application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:56:42,622] org.eclipse.jetty.server.AbstractConnector: Stopped admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 16:56:42,623] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@c29b0dc{/,null,STOPPED}
+INFO  [2021-05-24 16:56:42,626] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3093b9ff{/,null,STOPPED}
+INFO  [2021-05-24 17:02:17,657] org.eclipse.jetty.util.log: Logging initialized @1347ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:02:17,725] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:02:17,726] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:02:17,838] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:02:17,839] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:02:17,840] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:02:18,052] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:02:18,105] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:02:18,110] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:02:18,110] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:02:18,110] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:02:18,112] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:02:18,382] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:02:18,895] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@da34eb0'
+INFO  [2021-05-24 17:02:18,903] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:02:19,103] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:02:19,172] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:58886}
+INFO  [2021-05-24 17:02:19,173] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:58887}
+INFO  [2021-05-24 17:02:19,174] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:02:19,483] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:02:19,485] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3093b9ff{/,null,AVAILABLE}
+INFO  [2021-05-24 17:02:19,486] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:02:19,487] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@c29b0dc{/,null,AVAILABLE}
+INFO  [2021-05-24 17:02:19,497] org.eclipse.jetty.server.AbstractConnector: Started application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:58886}
+INFO  [2021-05-24 17:02:19,499] org.eclipse.jetty.server.AbstractConnector: Started admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:58887}
+INFO  [2021-05-24 17:02:19,499] org.eclipse.jetty.server.Server: Started @3190ms
+INFO  [2021-05-24 17:02:19,553] org.eclipse.jetty.server.AbstractConnector: Stopped application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:02:19,554] org.eclipse.jetty.server.AbstractConnector: Stopped admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:02:19,555] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@c29b0dc{/,null,STOPPED}
+INFO  [2021-05-24 17:02:19,558] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3093b9ff{/,null,STOPPED}
+INFO  [2021-05-24 17:04:25,597] org.eclipse.jetty.util.log: Logging initialized @1297ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:04:25,663] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:04:25,663] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:04:25,758] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:04:25,759] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:04:25,760] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:04:25,953] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:04:26,009] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:04:26,013] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:04:26,013] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:04:26,013] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:04:26,015] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:04:26,287] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:04:26,809] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@da34eb0'
+INFO  [2021-05-24 17:04:26,817] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:04:27,015] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:04:27,079] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:58909}
+INFO  [2021-05-24 17:04:27,080] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:58910}
+INFO  [2021-05-24 17:04:27,082] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:04:27,378] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:04:27,379] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3093b9ff{/,null,AVAILABLE}
+INFO  [2021-05-24 17:04:27,380] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:04:27,381] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@c29b0dc{/,null,AVAILABLE}
+INFO  [2021-05-24 17:04:27,391] org.eclipse.jetty.server.AbstractConnector: Started application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:58909}
+INFO  [2021-05-24 17:04:27,392] org.eclipse.jetty.server.AbstractConnector: Started admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:58910}
+INFO  [2021-05-24 17:04:27,392] org.eclipse.jetty.server.Server: Started @3093ms
+INFO  [2021-05-24 17:04:27,438] org.eclipse.jetty.server.AbstractConnector: Stopped application@3f45dfec{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:04:27,438] org.eclipse.jetty.server.AbstractConnector: Stopped admin@7c69e1e1{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:04:27,439] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@c29b0dc{/,null,STOPPED}
+INFO  [2021-05-24 17:04:27,442] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3093b9ff{/,null,STOPPED}
+INFO  [2021-05-24 17:06:12,761] org.eclipse.jetty.util.log: Logging initialized @1224ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:06:12,808] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:06:12,809] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:06:12,881] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:06:12,882] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:06:12,883] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:06:13,049] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:06:13,086] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:06:13,089] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:06:13,089] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:06:13,089] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:06:13,092] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:06:13,361] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:06:13,862] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5ab5924c'
+INFO  [2021-05-24 17:06:13,869] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:06:14,044] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:06:14,099] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2f6f4ac4{HTTP/1.1, (http/1.1)}{0.0.0.0:58933}
+INFO  [2021-05-24 17:06:14,100] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@727dcc64{HTTP/1.1, (http/1.1)}{0.0.0.0:58934}
+INFO  [2021-05-24 17:06:14,102] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:06:14,410] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:06:14,412] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@18f4086e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:06:14,413] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:06:14,413] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@186d6033{/,null,AVAILABLE}
+INFO  [2021-05-24 17:06:14,422] org.eclipse.jetty.server.AbstractConnector: Started application@2f6f4ac4{HTTP/1.1, (http/1.1)}{0.0.0.0:58933}
+INFO  [2021-05-24 17:06:14,424] org.eclipse.jetty.server.AbstractConnector: Started admin@727dcc64{HTTP/1.1, (http/1.1)}{0.0.0.0:58934}
+INFO  [2021-05-24 17:06:14,424] org.eclipse.jetty.server.Server: Started @2887ms
+INFO  [2021-05-24 17:06:14,647] org.eclipse.jetty.server.AbstractConnector: Stopped application@2f6f4ac4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:06:14,648] org.eclipse.jetty.server.AbstractConnector: Stopped admin@727dcc64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:06:14,648] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@186d6033{/,null,STOPPED}
+INFO  [2021-05-24 17:06:14,652] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@18f4086e{/,null,STOPPED}
+INFO  [2021-05-24 17:13:31,704] org.eclipse.jetty.util.log: Logging initialized @1127ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:13:31,757] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:13:31,758] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:13:31,844] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:13:31,845] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:13:31,846] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:13:32,026] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:13:32,066] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:13:32,069] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:13:32,069] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:13:32,069] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:13:32,072] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:13:32,330] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:13:32,825] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@59baf2c7'
+INFO  [2021-05-24 17:13:32,832] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:13:33,011] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:13:33,065] org.eclipse.jetty.setuid.SetUIDListener: Opened application@319aa9ee{HTTP/1.1, (http/1.1)}{0.0.0.0:59005}
+INFO  [2021-05-24 17:13:33,066] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@1d806de6{HTTP/1.1, (http/1.1)}{0.0.0.0:59006}
+INFO  [2021-05-24 17:13:33,067] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:13:33,339] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:13:33,340] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@64d53f0d{/,null,AVAILABLE}
+INFO  [2021-05-24 17:13:33,341] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:13:33,342] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7474196{/,null,AVAILABLE}
+INFO  [2021-05-24 17:13:33,351] org.eclipse.jetty.server.AbstractConnector: Started application@319aa9ee{HTTP/1.1, (http/1.1)}{0.0.0.0:59005}
+INFO  [2021-05-24 17:13:33,353] org.eclipse.jetty.server.AbstractConnector: Started admin@1d806de6{HTTP/1.1, (http/1.1)}{0.0.0.0:59006}
+INFO  [2021-05-24 17:13:33,354] org.eclipse.jetty.server.Server: Started @2778ms
+INFO  [2021-05-24 17:13:33,555] org.eclipse.jetty.server.AbstractConnector: Stopped application@319aa9ee{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:13:33,555] org.eclipse.jetty.server.AbstractConnector: Stopped admin@1d806de6{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:13:33,556] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7474196{/,null,STOPPED}
+INFO  [2021-05-24 17:13:33,559] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@64d53f0d{/,null,STOPPED}
+INFO  [2021-05-24 17:14:29,357] org.eclipse.jetty.util.log: Logging initialized @1141ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:14:29,405] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:14:29,406] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:14:29,486] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:14:29,487] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:14:29,488] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:14:29,666] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:14:29,711] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:14:29,713] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:14:29,714] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:14:29,714] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:14:29,716] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:14:29,981] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:14:30,458] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@59baf2c7'
+INFO  [2021-05-24 17:14:30,465] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:14:30,631] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:14:30,688] org.eclipse.jetty.setuid.SetUIDListener: Opened application@319aa9ee{HTTP/1.1, (http/1.1)}{0.0.0.0:59024}
+INFO  [2021-05-24 17:14:30,688] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@1d806de6{HTTP/1.1, (http/1.1)}{0.0.0.0:59025}
+INFO  [2021-05-24 17:14:30,689] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:14:30,968] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:14:30,973] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@64d53f0d{/,null,AVAILABLE}
+INFO  [2021-05-24 17:14:30,974] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:14:30,975] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7474196{/,null,AVAILABLE}
+INFO  [2021-05-24 17:14:30,983] org.eclipse.jetty.server.AbstractConnector: Started application@319aa9ee{HTTP/1.1, (http/1.1)}{0.0.0.0:59024}
+INFO  [2021-05-24 17:14:30,985] org.eclipse.jetty.server.AbstractConnector: Started admin@1d806de6{HTTP/1.1, (http/1.1)}{0.0.0.0:59025}
+INFO  [2021-05-24 17:14:30,985] org.eclipse.jetty.server.Server: Started @2770ms
+INFO  [2021-05-24 17:14:31,175] org.eclipse.jetty.server.AbstractConnector: Stopped application@319aa9ee{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:14:31,175] org.eclipse.jetty.server.AbstractConnector: Stopped admin@1d806de6{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:14:31,176] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7474196{/,null,STOPPED}
+INFO  [2021-05-24 17:14:31,180] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@64d53f0d{/,null,STOPPED}
+INFO  [2021-05-24 17:17:04,440] org.eclipse.jetty.util.log: Logging initialized @1298ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:17:04,501] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:17:04,502] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:17:04,609] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:17:04,610] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:17:04,611] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:17:04,816] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:17:04,869] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:17:04,873] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:17:04,873] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:17:04,873] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:17:04,875] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:17:05,151] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:17:05,684] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5ab5924c'
+INFO  [2021-05-24 17:17:05,692] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:17:05,897] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:17:05,961] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2f6f4ac4{HTTP/1.1, (http/1.1)}{0.0.0.0:59082}
+INFO  [2021-05-24 17:17:05,961] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@727dcc64{HTTP/1.1, (http/1.1)}{0.0.0.0:59083}
+INFO  [2021-05-24 17:17:05,963] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:17:06,282] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:17:06,283] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@18f4086e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:17:06,285] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:17:06,285] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@186d6033{/,null,AVAILABLE}
+INFO  [2021-05-24 17:17:06,295] org.eclipse.jetty.server.AbstractConnector: Started application@2f6f4ac4{HTTP/1.1, (http/1.1)}{0.0.0.0:59082}
+INFO  [2021-05-24 17:17:06,297] org.eclipse.jetty.server.AbstractConnector: Started admin@727dcc64{HTTP/1.1, (http/1.1)}{0.0.0.0:59083}
+INFO  [2021-05-24 17:17:06,297] org.eclipse.jetty.server.Server: Started @3155ms
+INFO  [2021-05-24 17:17:06,505] org.eclipse.jetty.server.AbstractConnector: Stopped application@2f6f4ac4{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:17:06,506] org.eclipse.jetty.server.AbstractConnector: Stopped admin@727dcc64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:17:06,507] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@186d6033{/,null,STOPPED}
+INFO  [2021-05-24 17:17:06,510] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@18f4086e{/,null,STOPPED}
+INFO  [2021-05-24 17:20:43,113] org.eclipse.jetty.util.log: Logging initialized @1245ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:20:43,182] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:20:43,183] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:20:43,281] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:20:43,283] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:20:43,284] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:20:43,476] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:20:43,524] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:20:43,528] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:20:43,528] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:20:43,528] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:20:43,530] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:20:43,809] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:20:44,289] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@145e958f'
+INFO  [2021-05-24 17:20:44,299] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:20:44,487] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:20:44,546] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59107}
+INFO  [2021-05-24 17:20:44,546] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59108}
+INFO  [2021-05-24 17:20:44,548] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:20:44,869] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:20:44,870] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61246109{/,null,AVAILABLE}
+INFO  [2021-05-24 17:20:44,872] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:20:44,872] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61ce238e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:20:44,884] org.eclipse.jetty.server.AbstractConnector: Started application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59107}
+INFO  [2021-05-24 17:20:44,885] org.eclipse.jetty.server.AbstractConnector: Started admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59108}
+INFO  [2021-05-24 17:20:44,885] org.eclipse.jetty.server.Server: Started @3018ms
+INFO  [2021-05-24 17:20:45,097] org.eclipse.jetty.server.AbstractConnector: Stopped application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:20:45,098] org.eclipse.jetty.server.AbstractConnector: Stopped admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:20:45,099] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61ce238e{/,null,STOPPED}
+INFO  [2021-05-24 17:20:45,102] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61246109{/,null,STOPPED}
+INFO  [2021-05-24 17:41:04,487] org.eclipse.jetty.util.log: Logging initialized @1280ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:41:04,558] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:41:04,559] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:41:04,674] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:41:04,675] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:41:04,676] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:41:04,897] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:41:04,950] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:41:04,955] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:41:04,955] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:41:04,955] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:41:04,958] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:41:05,257] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:41:05,777] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@145e958f'
+INFO  [2021-05-24 17:41:05,786] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:41:05,987] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:41:06,050] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59249}
+INFO  [2021-05-24 17:41:06,050] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59250}
+INFO  [2021-05-24 17:41:06,052] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:41:06,393] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:41:06,395] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61246109{/,null,AVAILABLE}
+INFO  [2021-05-24 17:41:06,396] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:41:06,397] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61ce238e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:41:06,408] org.eclipse.jetty.server.AbstractConnector: Started application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59249}
+INFO  [2021-05-24 17:41:06,410] org.eclipse.jetty.server.AbstractConnector: Started admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59250}
+INFO  [2021-05-24 17:41:06,410] org.eclipse.jetty.server.Server: Started @3204ms
+INFO  [2021-05-24 17:41:06,457] org.eclipse.jetty.server.AbstractConnector: Stopped application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:41:06,458] org.eclipse.jetty.server.AbstractConnector: Stopped admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:41:06,458] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61ce238e{/,null,STOPPED}
+INFO  [2021-05-24 17:41:06,462] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61246109{/,null,STOPPED}
+INFO  [2021-05-24 17:43:00,283] org.eclipse.jetty.util.log: Logging initialized @1236ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:43:00,349] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:43:00,350] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:43:00,453] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:43:00,454] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:43:00,456] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:43:00,647] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:43:00,690] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:43:00,694] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:43:00,695] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:43:00,695] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:43:00,696] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:43:00,981] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:43:01,507] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@145e958f'
+INFO  [2021-05-24 17:43:01,515] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:43:01,705] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:43:01,768] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59269}
+INFO  [2021-05-24 17:43:01,768] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59270}
+INFO  [2021-05-24 17:43:01,770] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:43:02,120] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:43:02,122] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61246109{/,null,AVAILABLE}
+INFO  [2021-05-24 17:43:02,123] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:43:02,124] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61ce238e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:43:02,134] org.eclipse.jetty.server.AbstractConnector: Started application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59269}
+INFO  [2021-05-24 17:43:02,135] org.eclipse.jetty.server.AbstractConnector: Started admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59270}
+INFO  [2021-05-24 17:43:02,135] org.eclipse.jetty.server.Server: Started @3089ms
+INFO  [2021-05-24 17:43:02,344] org.eclipse.jetty.server.AbstractConnector: Stopped application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:43:02,345] org.eclipse.jetty.server.AbstractConnector: Stopped admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:43:02,345] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61ce238e{/,null,STOPPED}
+INFO  [2021-05-24 17:43:02,349] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61246109{/,null,STOPPED}
+INFO  [2021-05-24 17:44:27,966] org.eclipse.jetty.util.log: Logging initialized @1295ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:44:28,036] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:44:28,037] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:44:28,173] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:44:28,174] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:44:28,175] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:44:28,393] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:44:28,457] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:44:28,462] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:44:28,462] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:44:28,462] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:44:28,466] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:44:28,773] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:44:29,315] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@145e958f'
+INFO  [2021-05-24 17:44:29,323] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:44:29,524] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:44:29,587] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59311}
+INFO  [2021-05-24 17:44:29,587] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59312}
+INFO  [2021-05-24 17:44:29,589] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:44:29,909] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:44:29,910] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61246109{/,null,AVAILABLE}
+INFO  [2021-05-24 17:44:29,912] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:44:29,912] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61ce238e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:44:29,922] org.eclipse.jetty.server.AbstractConnector: Started application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59311}
+INFO  [2021-05-24 17:44:29,923] org.eclipse.jetty.server.AbstractConnector: Started admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59312}
+INFO  [2021-05-24 17:44:29,924] org.eclipse.jetty.server.Server: Started @3253ms
+INFO  [2021-05-24 17:44:30,130] org.eclipse.jetty.server.AbstractConnector: Stopped application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:44:30,131] org.eclipse.jetty.server.AbstractConnector: Stopped admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:44:30,132] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61ce238e{/,null,STOPPED}
+INFO  [2021-05-24 17:44:30,135] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61246109{/,null,STOPPED}
+INFO  [2021-05-24 17:47:17,307] org.eclipse.jetty.util.log: Logging initialized @1296ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:47:17,379] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:47:17,380] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:47:17,495] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:47:17,496] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:47:17,497] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:47:17,693] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:47:17,746] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:47:17,750] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:47:17,750] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:47:17,750] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:47:17,752] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:47:18,031] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:47:18,551] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@145e958f'
+INFO  [2021-05-24 17:47:18,561] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:47:18,784] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:47:18,850] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59355}
+INFO  [2021-05-24 17:47:18,850] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59356}
+INFO  [2021-05-24 17:47:18,852] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:47:19,164] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:47:19,165] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61246109{/,null,AVAILABLE}
+INFO  [2021-05-24 17:47:19,166] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:47:19,167] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61ce238e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:47:19,177] org.eclipse.jetty.server.AbstractConnector: Started application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59355}
+INFO  [2021-05-24 17:47:19,178] org.eclipse.jetty.server.AbstractConnector: Started admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59356}
+INFO  [2021-05-24 17:47:19,178] org.eclipse.jetty.server.Server: Started @3168ms
+INFO  [2021-05-24 17:47:19,391] org.eclipse.jetty.server.AbstractConnector: Stopped application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:47:19,392] org.eclipse.jetty.server.AbstractConnector: Stopped admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:47:19,392] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61ce238e{/,null,STOPPED}
+INFO  [2021-05-24 17:47:19,396] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61246109{/,null,STOPPED}
+INFO  [2021-05-24 17:47:47,838] org.eclipse.jetty.util.log: Logging initialized @1162ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:47:47,892] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:47:47,893] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:47:47,967] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:47:47,968] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:47:47,969] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:47:48,140] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:47:48,184] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:47:48,187] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:47:48,187] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:47:48,187] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:47:48,189] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:47:48,465] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:47:48,981] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@a5e8260'
+INFO  [2021-05-24 17:47:48,989] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:47:49,193] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:47:49,254] org.eclipse.jetty.setuid.SetUIDListener: Opened application@42b43a6{HTTP/1.1, (http/1.1)}{0.0.0.0:59372}
+INFO  [2021-05-24 17:47:49,254] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@1d622556{HTTP/1.1, (http/1.1)}{0.0.0.0:59373}
+INFO  [2021-05-24 17:47:49,256] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:47:49,551] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:47:49,552] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@64dcf763{/,null,AVAILABLE}
+INFO  [2021-05-24 17:47:49,553] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:47:49,553] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@5016f1a{/,null,AVAILABLE}
+INFO  [2021-05-24 17:47:49,563] org.eclipse.jetty.server.AbstractConnector: Started application@42b43a6{HTTP/1.1, (http/1.1)}{0.0.0.0:59372}
+INFO  [2021-05-24 17:47:49,564] org.eclipse.jetty.server.AbstractConnector: Started admin@1d622556{HTTP/1.1, (http/1.1)}{0.0.0.0:59373}
+INFO  [2021-05-24 17:47:49,564] org.eclipse.jetty.server.Server: Started @2889ms
+INFO  [2021-05-24 17:47:49,764] org.eclipse.jetty.server.AbstractConnector: Stopped application@42b43a6{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:47:49,765] org.eclipse.jetty.server.AbstractConnector: Stopped admin@1d622556{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:47:49,765] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@5016f1a{/,null,STOPPED}
+INFO  [2021-05-24 17:47:49,769] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@64dcf763{/,null,STOPPED}
+INFO  [2021-05-24 17:48:07,948] org.eclipse.jetty.util.log: Logging initialized @1243ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:48:08,020] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:48:08,020] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:48:08,124] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:48:08,125] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:48:08,126] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:48:08,332] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:48:08,393] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:48:08,396] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:48:08,396] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:48:08,397] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:48:08,399] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:48:08,692] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:48:09,193] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@145e958f'
+INFO  [2021-05-24 17:48:09,202] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:48:09,396] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:48:09,461] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59389}
+INFO  [2021-05-24 17:48:09,461] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59390}
+INFO  [2021-05-24 17:48:09,463] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:48:09,798] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:48:09,799] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61246109{/,null,AVAILABLE}
+INFO  [2021-05-24 17:48:09,801] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:48:09,801] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61ce238e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:48:09,811] org.eclipse.jetty.server.AbstractConnector: Started application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59389}
+INFO  [2021-05-24 17:48:09,814] org.eclipse.jetty.server.AbstractConnector: Started admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59390}
+INFO  [2021-05-24 17:48:09,814] org.eclipse.jetty.server.Server: Started @3109ms
+INFO  [2021-05-24 17:48:10,019] org.eclipse.jetty.server.AbstractConnector: Stopped application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:48:10,020] org.eclipse.jetty.server.AbstractConnector: Stopped admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:48:10,021] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61ce238e{/,null,STOPPED}
+INFO  [2021-05-24 17:48:10,024] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61246109{/,null,STOPPED}
+INFO  [2021-05-24 17:49:52,602] org.eclipse.jetty.util.log: Logging initialized @1239ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2021-05-24 17:49:52,669] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2021-05-24 17:49:52,670] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2021-05-24 17:49:52,784] org.hibernate.Version: HHH000412: Hibernate Core {5.2.1.Final}
+INFO  [2021-05-24 17:49:52,784] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2021-05-24 17:49:52,785] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2021-05-24 17:49:52,980] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+WARN  [2021-05-24 17:49:53,035] org.hibernate.orm.connections: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  [2021-05-24 17:49:53,040] org.hibernate.orm.connections: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mysql]
+INFO  [2021-05-24 17:49:53,040] org.hibernate.orm.connections: HHH10001001: Connection properties: {password=****, user=root}
+INFO  [2021-05-24 17:49:53,040] org.hibernate.orm.connections: HHH10001003: Autocommit mode: false
+INFO  [2021-05-24 17:49:53,042] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 100 (min=1)
+INFO  [2021-05-24 17:49:53,323] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  [2021-05-24 17:49:53,846] org.hibernate.tool.schema.internal.SchemaCreatorImpl: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@145e958f'
+INFO  [2021-05-24 17:49:53,855] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2021-05-24 17:49:54,055] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2021-05-24 17:49:54,124] org.eclipse.jetty.setuid.SetUIDListener: Opened application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59414}
+INFO  [2021-05-24 17:49:54,125] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59415}
+INFO  [2021-05-24 17:49:54,126] org.eclipse.jetty.server.Server: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 16.0.1+9-24
+INFO  [2021-05-24 17:49:54,452] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /campsites (com.example.helloworld.resources.CampsiteResource)
+    POST    /campsites (com.example.helloworld.resources.CampsiteResource)
+
+INFO  [2021-05-24 17:49:54,453] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61246109{/,null,AVAILABLE}
+INFO  [2021-05-24 17:49:54,454] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-05-24 17:49:54,455] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@61ce238e{/,null,AVAILABLE}
+INFO  [2021-05-24 17:49:54,465] org.eclipse.jetty.server.AbstractConnector: Started application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:59414}
+INFO  [2021-05-24 17:49:54,467] org.eclipse.jetty.server.AbstractConnector: Started admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:59415}
+INFO  [2021-05-24 17:49:54,467] org.eclipse.jetty.server.Server: Started @3105ms
+INFO  [2021-05-24 17:49:54,695] org.eclipse.jetty.server.AbstractConnector: Stopped application@3221588e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:49:54,696] org.eclipse.jetty.server.AbstractConnector: Stopped admin@51141f64{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+INFO  [2021-05-24 17:49:54,696] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61ce238e{/,null,STOPPED}
+INFO  [2021-05-24 17:49:54,700] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@61246109{/,null,STOPPED}

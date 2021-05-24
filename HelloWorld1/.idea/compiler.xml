@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HelloWorld1" />
-        <module name="HelloWorld1 (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

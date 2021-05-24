@@ -1,4 +1,5 @@
 package com.example.helloworld;
+import com.example.helloworld.resources.CampsiteResource;
 import org.hibernate.Session;
 
 
@@ -68,6 +69,9 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
             Session session1 = HibernateUtil.getSessionFactory().openSession();
             List< Campsite > sites = session1.createQuery("from Campsite", Campsite.class).list();
             sites.forEach(s -> System.out.println(s.getName()));
-            session1.close();
+
         }
+
+
+
 }

@@ -1,24 +1,13 @@
 package com.example.helloworld.db;
 
-import javax.persistence.criteria.CriteriaQuery;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.MediaType;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.Optional;
+
 import com.example.helloworld.hibernate.Campsite;
 import com.example.helloworld.hibernate.HibernateUtil;
 import io.dropwizard.hibernate.AbstractDAO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-
-import static java.util.Collections.list;
-import org.hibernate.query.Query;
 
 
 public class CampsiteDAO extends AbstractDAO<Campsite>{
@@ -54,6 +43,13 @@ public class CampsiteDAO extends AbstractDAO<Campsite>{
         transaction.commit();
         session2.close();
 
+    }
+
+    public Campsite findById(long siteId) {
+        Session session= HibernateUtil.getSessionFactory().openSession();
+        Campsite site = session.createQuery(
+                "select c from Campsite c where c.siteId like :siteId", Campsite.class).setParameter("siteId", siteId).getSingleResult();;
+        return site;
     }
 
 }

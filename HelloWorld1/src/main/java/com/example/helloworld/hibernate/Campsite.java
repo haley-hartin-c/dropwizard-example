@@ -19,7 +19,7 @@ public class Campsite  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "siteId", unique = true, nullable = false)
-    private Integer siteId;
+    private long siteId;
 
     @Column(name = "name", unique = true, nullable = false, length = 100)
     private String name;
@@ -36,7 +36,7 @@ public class Campsite  {
 
     }
 
-    public int getId(){
+    public long getId(){
         return siteId;
     }
     public String getLocation(){
@@ -46,7 +46,7 @@ public class Campsite  {
         return name;
     }
 
-    public void setId(int id){
+    public void setId(long id){
         this.siteId=id;
     }
 
