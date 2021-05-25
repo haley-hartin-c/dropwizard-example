@@ -60,7 +60,7 @@ public class IntegrationTest {
 
 
     @Test
-    void testPostCampsite() {
+    void  testPostCampsite() {
 
         final Campsite site = new Campsite("Boyd", "Longmont");
         site.setSiteId(3);
