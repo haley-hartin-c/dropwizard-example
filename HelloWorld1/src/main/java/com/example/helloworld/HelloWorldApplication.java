@@ -11,35 +11,44 @@ import com.example.helloworld.hibernate.Campsite;
 import com.example.helloworld.db.CampsiteDAO;
 import com.example.helloworld.hibernate.HibernateUtil;
 import io.dropwizard.db.DataSourceFactory;
+import io.dropwizard.setup.Bootstrap;
+import io.dropwizard.migrations.MigrationsBundle;
 
 import java.util.List;
+import lombok.Data;
 
-
+@Data
 public class HelloWorldApplication extends Application<HelloWorldConfiguration> {
 
-    private  HibernateBundle<HelloWorldConfiguration> hibernateBundle
-            = new HibernateBundle<HelloWorldConfiguration>(Campsite.class) {
+        private String name = "hello-world";
+
+        private  HibernateBundle<HelloWorldConfiguration> hibernateBundle
+                = new HibernateBundle<HelloWorldConfiguration>(Campsite.class) {
+
+            @Override
+            public DataSourceFactory getDataSourceFactory(HelloWorldConfiguration configuration) {
+                return  configuration.getDataSourceFactory();
+            }
+
+        };
+
         @Override
-        public DataSourceFactory getDataSourceFactory(HelloWorldConfiguration configuration) {
-            return configuration.getDataSourceFactory();
+        public void initialize(Bootstrap<HelloWorldConfiguration> bootstrap) {
+            bootstrap.addBundle(new MigrationsBundle<HelloWorldConfiguration>() {
+
+                @Override
+                public DataSourceFactory getDataSourceFactory(HelloWorldConfiguration  configuration) {
+                    return configuration.getDataSourceFactory();
+
+                }
+            });
+
         }
-    };
 
 
         public static void main(final String[] args) throws Exception {
             new HelloWorldApplication().run(args);
         }
-
-
-        public String getName() {
-            return "hello-world";
-        }
-
-
-//        @Override
-//        public void initialize(Bootstrap <HelloWorldConfiguration> bootstrap) {
-//            bootstrap.addBundle(hibernateBundle);
-//        }
 
         @Override
         public void run(HelloWorldConfiguration configuration,
@@ -69,7 +78,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
             //Printing out database contents to terminal
             Session session1 = HibernateUtil.getSessionFactory().openSession();
             List< Campsite > sites = session1.createQuery("from Campsite", Campsite.class).list();
-//            sites.forEach(s -> System.out.println(s.getName()));
+            sites.forEach(s -> System.out.println(s.getName()));
 
         }
 

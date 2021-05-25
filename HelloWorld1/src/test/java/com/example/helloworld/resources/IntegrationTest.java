@@ -78,6 +78,15 @@ public class IntegrationTest {
     }
 
     @Test
+    void testPostDuplicateCampsite() {
+
+        final Campsite site = new Campsite("Boyd2", "Longmont2");
+        site.setSiteId(3);
+        final Campsite newSite = postSite(site);
+        assertThat(newSite.getSiteId()).isNull();
+    }
+
+    @Test
    void testRenderingCampsite() throws Exception {
 
         final Campsite site = new Campsite("IntegrationTest", "Utah");

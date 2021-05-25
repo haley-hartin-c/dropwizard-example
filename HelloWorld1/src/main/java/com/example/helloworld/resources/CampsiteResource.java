@@ -46,8 +46,12 @@ public class CampsiteResource {
     @GET
     @UnitOfWork
     @Path("/{siteId}")
-    public Campsite getPerson(@PathParam("siteId") Long siteId) {
-        return campsiteDAO.findById(siteId);
+    public Campsite getSite(@PathParam("siteId") Long siteId) {
+        return findSafely(siteId);
+    }
+
+    private Campsite findSafely(long siteId) {
+        return campsiteDAO.findById(siteId).orElseThrow(() -> new NotFoundException("No such campsite."));
     }
 
 

@@ -8,6 +8,8 @@ import io.dropwizard.hibernate.AbstractDAO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import java.util.Optional;
+import javax.persistence.Query;
 
 
 public class CampsiteDAO extends AbstractDAO<Campsite>{
@@ -31,25 +33,30 @@ public class CampsiteDAO extends AbstractDAO<Campsite>{
 
     public void addSite(Campsite site){
 
-        Session session2= HibernateUtil.getSessionFactory().openSession();
-        Transaction transaction = null;
+        if(findById(site.getSiteId())!= null){
 
-        // start a transaction
-        transaction = session2.beginTransaction();
+            Session session2= HibernateUtil.getSessionFactory().openSession();
+            Transaction transaction = null;
 
-        session2.save(site);
+            // start a transaction
+            transaction = session2.beginTransaction();
 
-        // commit transaction
-        transaction.commit();
-        session2.close();
+            session2.save(site);
+
+            // commit transaction
+            transaction.commit();
+            session2.close();
+        }
 
     }
 
-    public Campsite findById(long siteId) {
+    public Optional<Campsite> findById(long siteId) {
         Session session= HibernateUtil.getSessionFactory().openSession();
-        Campsite site = session.createQuery(
-                "select c from Campsite c where c.siteId like :siteId", Campsite.class).setParameter("siteId", siteId).getSingleResult();;
-        return site;
+         Campsite  site = session.createQuery(
+                "select c from Campsite c where c.siteId like :siteId", Campsite.class).setParameter("siteId", siteId)
+                .getResultList().stream().findFirst().orElse(null);;;
+
+        return Optional.ofNullable(site);
     }
 
 }

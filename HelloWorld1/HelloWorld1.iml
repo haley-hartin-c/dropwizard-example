@@ -5,7 +5,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="HelloWorld1" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -176,5 +178,8 @@
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-http-servlet:2.3.16" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-debug-all:5.0.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.20" level="project" />
+    <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-migrations:2.0.21" level="project" />
+    <orderEntry type="library" name="Maven: org.liquibase:liquibase-core:3.10.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.mattbertolini:liquibase-slf4j:2.0.0" level="project" />
   </component>
 </module>

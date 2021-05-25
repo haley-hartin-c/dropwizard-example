@@ -75,7 +75,7 @@ public class CampsiteResourceTest {
 
     @Test
     public void getSiteSuccess() {
-        when(DAO.findById(1L)).thenReturn(site1);
+        when(DAO.findById(1L)).thenReturn(Optional.of(site1));
 
         Campsite found = RULE.target("/campsites/1").request().get(Campsite.class);
 
