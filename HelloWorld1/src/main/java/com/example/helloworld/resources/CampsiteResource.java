@@ -10,6 +10,7 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 import com.example.helloworld.db.CampsiteDAO;
+import com.example.helloworld.lib.CampsiteLib;
 import com.example.helloworld.hibernate.Campsite;
 import com.example.helloworld.hibernate.HibernateUtil;
 import org.hibernate.Session;
@@ -18,41 +19,36 @@ import io.dropwizard.jersey.params.LongParam;
 import javax.ws.rs.PathParam;
 import io.dropwizard.hibernate.UnitOfWork;
 
-
 @Path("/campsites")
 @Produces(MediaType.APPLICATION_JSON)
 public class CampsiteResource {
 
 
-    private CampsiteDAO campsiteDAO;
+    private CampsiteLib campsiteLib;
 
-    public CampsiteResource(CampsiteDAO campsiteDAO) {
-        this.campsiteDAO = campsiteDAO;
+    public CampsiteResource(CampsiteLib campsiteLib) {
+        this.campsiteLib = campsiteLib;
     }
 
     @POST
     public Response addSite(Campsite site) {
-        campsiteDAO.addSite(site);
+        campsiteLib.addSite(site);
         return Response.ok(site).build();
     }
 
 
     @GET
     @UnitOfWork
-    public List<Campsite>  findAll() {
-        return campsiteDAO.findAll();
-    }
+    public List<Campsite>  findAll() { return campsiteLib.findAll(); }
 
     @GET
     @UnitOfWork
     @Path("/{siteId}")
     public Campsite getSite(@PathParam("siteId") Long siteId) {
-        return findSafely(siteId);
+        return campsiteLib.getSite(siteId);
     }
 
-    private Campsite findSafely(long siteId) {
-        return campsiteDAO.findById(siteId).orElseThrow(() -> new NotFoundException("No such campsite."));
-    }
+
 
 
 }

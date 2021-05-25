@@ -13,6 +13,7 @@ import com.example.helloworld.hibernate.HibernateUtil;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.migrations.MigrationsBundle;
+import com.example.helloworld.lib.CampsiteLib;
 
 import java.util.List;
 import lombok.Data;
@@ -62,22 +63,19 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
                     new TemplateHealthCheck(configuration.getTemplate());
 
             final CampsiteDAO campsiteDAO = new CampsiteDAO(HibernateUtil.getSessionFactory());
-
-            environment.healthChecks().register("template", healthCheck);
-
-
-            final CampsiteResource resource = new CampsiteResource(
-                    campsiteDAO
-            );
+            final CampsiteLib campsiteLib = new CampsiteLib(campsiteDAO);
+            final CampsiteResource resource = new CampsiteResource(campsiteLib);
 
 
             resource.addSite(site1);
             resource.addSite(site2);
+
+            environment.healthChecks().register("template", healthCheck);
             environment.jersey().register(resource);
 
             //Printing out database contents to terminal
-            Session session1 = HibernateUtil.getSessionFactory().openSession();
-            List< Campsite > sites = session1.createQuery("from Campsite", Campsite.class).list();
+            Session session = HibernateUtil.getSessionFactory().openSession();
+            List< Campsite > sites = session.createQuery("from Campsite", Campsite.class).list();
             sites.forEach(s -> System.out.println(s.getName()));
 
         }

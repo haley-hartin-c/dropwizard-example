@@ -43,13 +43,6 @@ public class IntegrationTest {
             HelloWorldApplication.class, CONFIG_PATH,
             ConfigOverride.config("database.url", "jdbc:h2:" + TMP_FILE));
 
-//    @BeforeAll
-//    public static void migrateDb() throws Exception {
-//        System.out.println("setting up");
-//        RULE.getApplication().run("db", "migrate", CONFIG_PATH);
-//        System.out.println("set up");
-//    }
-//
     private static String createTempFile() {
         try {
             return File.createTempFile("test-example", null).getAbsolutePath();
@@ -75,15 +68,18 @@ public class IntegrationTest {
         assertThat(newSite.getSiteId()).isNotNull();
         assertThat(newSite.getLocation()).isEqualTo(site.getLocation());
         assertThat(newSite.getName()).isEqualTo(site.getName());
-    }
 
+
+    }
     @Test
     void testPostDuplicateCampsite() {
 
-        final Campsite site = new Campsite("Boyd2", "Longmont2");
-        site.setSiteId(3);
-        final Campsite newSite = postSite(site);
-        assertThat(newSite.getSiteId()).isNull();
+        final Campsite duplicateSite = new Campsite("Boyd2", "Longmont2");
+        duplicateSite.setSiteId(3);
+        final Campsite newDuplicateSite = postSite(duplicateSite);
+        final String url = "http://localhost:" + RULE.getLocalPort() + "/campsites/3";
+        Response response = RULE.client().target(url).request().get();
+        assertThat(response.getStatus()).isEqualTo(HttpStatus.OK_200);
     }
 
     @Test
@@ -92,8 +88,15 @@ public class IntegrationTest {
         final Campsite site = new Campsite("IntegrationTest", "Utah");
         site.setSiteId(4);
         final Campsite newSite = postSite(site);
-        final String url = "http://localhost:" + RULE.getLocalPort() + "/campsites";
+        final String url = "http://localhost:" + RULE.getLocalPort() + "/campsites/4";
         Response response = RULE.client().target(url).request().get();
         assertThat(response.getStatus()).isEqualTo(HttpStatus.OK_200);
+    }
+
+    @Test
+    void testRenderingCampsiteError() throws Exception {
+        final String url = "http://localhost:" + RULE.getLocalPort() + "/campsites/7";
+        Response response = RULE.client().target(url).request().get();
+        assertThat(response.getStatus()).isEqualTo(HttpStatus.NOT_FOUND_404);
     }
 }

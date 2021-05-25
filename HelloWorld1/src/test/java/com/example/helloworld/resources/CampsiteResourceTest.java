@@ -1,17 +1,13 @@
 package com.example.helloworld.resources;
 
-import com.example.helloworld.HelloWorldApplication;
-import com.example.helloworld.HelloWorldConfiguration;
 import com.example.helloworld.hibernate.Campsite;
-import com.example.helloworld.resources.CampsiteResource;
+import com.example.helloworld.lib.CampsiteLib;
 import com.example.helloworld.db.CampsiteDAO;
 
 
 import io.dropwizard.testing.junit5.DropwizardExtensionsSupport;
-import io.dropwizard.testing.junit.DropwizardAppRule;
 import io.dropwizard.testing.junit5.ResourceExtension;
 
-import org.junit.ClassRule;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,13 +29,13 @@ import static org.mockito.Mockito.verify;
 
 public class CampsiteResourceTest {
 
-    private static final CampsiteDAO DAO= mock(CampsiteDAO.class);
+    private static final CampsiteLib lib = mock(CampsiteLib.class);
+    private static final CampsiteResource resource  = new CampsiteResource(lib);
+
     public static final ResourceExtension RULE = ResourceExtension.builder()
-            .addResource(new CampsiteResource(DAO))
+            .addResource(resource)
             .setTestContainerFactory(new GrizzlyWebTestContainerFactory())
             .build();
-
-
 
 
     private Campsite site1;
@@ -61,38 +57,38 @@ public class CampsiteResourceTest {
 
     @AfterEach
     void tearDown() {
-        reset(DAO);
+        reset(lib);
     }
 
     @Test
     public void getAllSitesSuccess() {
 
-        when(DAO.findAll()).thenReturn(expectedList);
-        List<Campsite> found = DAO.findAll();
+        when(lib.findAll()).thenReturn(expectedList);
+        List<Campsite> found = lib.findAll();
         assertThat(expectedList).isEqualTo(found);
 
     }
 
     @Test
     public void getSiteSuccess() {
-        when(DAO.findById(1L)).thenReturn(Optional.of(site1));
+        when(lib.getSite(1L)).thenReturn(site1);
 
         Campsite found = RULE.target("/campsites/1").request().get(Campsite.class);
 
         assertThat(found.getSiteId()).isEqualTo(site1.getSiteId());
 
-        verify(DAO).findById(1L);
+        verify(lib).getSite(1L);
     }
 
     @Test
     public void addSiteSuccess() {
 
-        when(DAO.findAll()).thenReturn(expectedList);
+        when(lib.findAll()).thenReturn(expectedList);
 
-        DAO.addSite(this.site3);
-       expectedList.add(this.site3);
+        lib.addSite(this.site3);
+        expectedList.add(this.site3);
 
-        List<Campsite> found = DAO.findAll();
+        List<Campsite> found = lib.findAll();
         assertThat(expectedList).isEqualTo(found);
 
 
